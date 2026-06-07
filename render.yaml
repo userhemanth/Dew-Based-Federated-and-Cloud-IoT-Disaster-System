@@ -3,6 +3,7 @@ services:
   - type: web
     name: disaster-backend
     env: python
+    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn backend.iot_api:app --host 0.0.0.0 --port $PORT"
     envVars:
@@ -13,6 +14,7 @@ services:
   - type: web
     name: disaster-dashboard
     env: python
+    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "streamlit run frontend/streamlit_dashboard.py --server.port $PORT --server.address 0.0.0.0"
     envVars:
@@ -24,3 +26,4 @@ services:
           type: web
           name: disaster-backend
           property: host
+
