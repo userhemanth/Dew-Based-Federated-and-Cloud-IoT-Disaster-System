@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────────────
+# Dew-Based Federated Learning — Dependencies
+# ─────────────────────────────────────────────────
+# Install with:  pip install -r requirements.txt
+
+# Core ML
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+
+# Federated Learning
+flwr>=1.5.0
+
+# Image processing
+Pillow>=9.0.0
+opencv-python>=4.7.0
+
+# Dashboard
+streamlit>=1.28.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Notifications
+plyer>=2.1.0
+
+# Utilities
+tqdm>=4.65.0
+scikit-learn>=1.3.0
+psutil>=5.9.0
+datasets>=2.14.0
+
+# API & Web Server (For Render Deployment)
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
+qrcode[pil]>=7.4.2
+pydeck>=0.8.0
