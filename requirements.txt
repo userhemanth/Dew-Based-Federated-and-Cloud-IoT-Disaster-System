@@ -35,3 +35,6 @@ uvicorn[standard]>=0.23.0
 python-multipart>=0.0.6
 qrcode[pil]>=7.4.2
 pydeck>=0.8.0
+
+# AWS Cloud Integration
+boto3>=1.28.0
